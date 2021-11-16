@@ -1,52 +1,52 @@
-.regular-customers-topic {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
+// .regular-customers-topic {
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.16;
+//   text-align: center;
+//   margin-bottom: 50px;
+// }
 
-.regular-customers-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .regular-customers-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
-.regular-customers-item {
-  display: block;
-  margin-right: 30px;
+// .regular-customers-item {
+//   display: block;
+//   margin-right: 30px;
 
-  &:last-child {
-    margin-right: 0px;
-  }
-}
-.customers-back {
-  width: 170px;
-  height: 92px;
-}
+//   &:last-child {
+//     margin-right: 0px;
+//   }
+// }
+// .customers-back {
+//   width: 170px;
+//   height: 92px;
+// }
 
-.customers-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--icon-color-passive);
-  border-radius: 4px;
-  color: var(--icon-color-passive);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .customers-link {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   height: 100%;
+//   border: 1px solid var(--icon-color-passive);
+//   border-radius: 4px;
+//   color: var(--icon-color-passive);
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:focus,
-  &:hover {
-    border-color: var(--background-text-color);
-  }
+//   &:focus,
+//   &:hover {
+//     border-color: var(--background-text-color);
+//   }
 
-  &:hover .customers-icon,
-  &:focus .customers-icon {
-    fill: var(--background-text-color);
-  }
-}
+//   &:hover .customers-icon,
+//   &:focus .customers-icon {
+//     fill: var(--background-text-color);
+//   }
+// }
 
-.customers-icon {
-  fill: var(--icon-color-passive);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .customers-icon {
+//   fill: var(--icon-color-passive);
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
