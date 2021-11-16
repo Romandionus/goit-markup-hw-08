@@ -1,0 +1,39 @@
+.btn {
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--primary-text-color);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--background-text-color);
+    color: var(--header-color);
+    box-shadow: var(--shadow-all--);
+  }
+}
+
+.btn-container-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.active-btn {
+  color: var(--header-color);
+  background-color: var(--background-text-color);
+}
+
+.btn-container-item {
+  margin-right: 8px;
+}
+
+.btn-container-item:last-child {
+  margin-right: 0;
+}

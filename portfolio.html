@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <header class="header">
+        <div class="container header-container">
+            <a class="logo link" href="./index.html">Web<span class="logo-dark">Studio</span></a>
+            <nav class="header-nav">
+                <!--кнопки навигации-->
+                <ul class="list header-nav__list">
+                    <li class="header-nav__item"><a class="header-nav__link link" href="./index.html">Студия</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link link current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="/контакты">Контакты</a></li>
+                </ul>
+            </nav>
+            <!--почта и телефон-->
+            <div class="header-contacts">
+                <ul class="list header-nav__list">
+                    <li class="header--contacts">
+                        <div class="header__contacts-container"><a class="header--contact-link link"
+                                href="mailto:info@devstudio.com"><svg class="mail-icon" width="16px" height="12px">
+                                    <use href="./images/sprite.svg#icon-mail"></use>
+                                </svg>info@devstudio.com </a> </div>
+                    </li>
+                    <li class="header--contacts">
+                        <div class="header__contacts-container">
+                            <a class="header--contact-link link" href="tel:+38096-111-11-11"><svg class="tel-icon" width="10px"
+                                    height="16px">
+                                    <use href="./images/sprite.svg#tel-icon"></use>
+                                </svg>+38 96 111
+                                11 11</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- основной контентр -->
+    <main>
+        <!-- фильтры портфолио -->
+
+        <section class="portfolio-main-content">
+            <div class="container btn-container">
+                <h1 class="visually-hidden">Скрытый заголовок</h1>
+                <ul class="list btn-container-list">
+                    <li class="btn-container-item"><button class="btn active-btn" type="button">Все</button></li>
+                    <li class="btn-container-item"><button class="btn" type="button">Веб-сайты</button></li>
+                    <li class="btn-container-item"><button class="btn" type="button">Приложения</button></li>
+                    <li class="btn-container-item"><button class="btn" type="button">Дизайн</button></li>
+                    <li class="btn-container-item"><button class="btn" type="button">Маркетинг</button></li>
+                </ul>
+                <ul class="list container-list-filter">
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img src="./images/tehnokryak.jpg" width="370" height="294" alt="Технокряк">
+                            
+                                
+                                <p class="portfolio-image-description">Технокряк это современная площадка
+                                    распространения коронавируса. Компании
+                                    используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content">Технокряк</h3>
+                            <p class="portfolio-content-description">Веб-сайт</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img
+                                    src="./images/neworlean.jpg" width="370" height="294"
+                                    alt="Постер New Orlean vs Golden Star">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam excepturi incidunt voluptatum maiores labore
+                                    molestias tempore, quia doloremque exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content">Постер <span lang="en">New Orlean vs Golden Star</span>
+                            </h3>
+                            <p class="portfolio-content-description">Дизайн</p>
+                        </div></a>
+                    </li>
+                    <li class="container-list-filter-item"><a href="#" class="container-list-filter-link">
+                        <div class="filter-list-wrap"><img
+                                    src="./images/seafood.jpg" width="370" height="294" alt="Ресторан">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam
+                                    excepturi incidunt voluptatum maiores labore molestias tempore, quia doloremque
+                                    exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content">Ресторан <span lang="en">Seafood</span></h3>
+                            <p class="portfolio-content-description">Приложение</p>
+                        </div></a>
+                    </li>
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img
+                                    src="./images/prime.jpg" width="370" height="294" alt="Проект Prime">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam
+                                    excepturi incidunt voluptatum maiores labore molestias tempore, quia doloremque
+                                    exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content">Проект <span lang="en">Prime</span></h3>
+                            <p class="portfolio-content-description">Маркетинг</p>
+                        </div></a>
+                    </li>
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img
+                                    src="./images/boxes.jpg" width="370" height="294" alt="Проект Boxes">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam
+                                    excepturi incidunt voluptatum maiores labore molestias tempore, quia doloremque
+                                    exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content">Проект <span lang="en">Boxes</span></h3>
+                            <p class="portfolio-content-description">Приложения</p>
+                        </div></a>
+                    </li>
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img
+                                    src="./images/inspirationpc.jpg" width="370" height="294"
+                                    alt="Inspiration has no Borders">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam
+                                    excepturi incidunt voluptatum maiores labore molestias tempore, quia doloremque
+                                    exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content" lang="en">Inspiration has no Borders</h3>
+                            <p class="portfolio-content-description">Веб-сайт</p>
+                        </div></a>
+                    </li>
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img
+                                    src="./images/limitededition.jpg" width="370" height="294"
+                                    alt="Издание Limited Edition">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam
+                                    excepturi incidunt voluptatum maiores labore molestias tempore, quia doloremque
+                                    exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content">Издание <span lang="en">Limited Edition</span></h3>
+                            <p class="portfolio-content-description">Дизайн</p>
+                        </div></a>
+                    </li>
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img
+                                    src="./images/lab.jpg" width="370" height="294" alt="Проект LAB Маркетинг">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam
+                                    excepturi incidunt voluptatum maiores labore molestias tempore, quia doloremque
+                                    exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content">Проект <span lang="en">LAB</span></h3>
+                            <p class="portfolio-content-description">Маркетинг</p>
+                        </div></a>
+                    </li>
+                    <li class="container-list-filter-item">
+                        <a href="#" class="container-list-filter-link"><div class="filter-list-wrap"><img
+                                    src="./images/businesslaptop.jpg" width="370" height="294" alt="Growing Business">
+                                <p class="portfolio-image-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni laboriosam
+                                    excepturi incidunt voluptatum maiores labore molestias tempore, quia doloremque
+                                    exercitationem?</p>
+                        </div>
+                        <div class="container-list-filter-item-description">
+                            <h3 class="portfolio-content" lang="en">Growing Business</h3>
+                            <p class="portfolio-content-description">Приложение</p>
+                        </div></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--футер сайта-->
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="footer-left">
+                <a class="logo-footer link footer-logo-link" href="./index.html">Web<span
+                        class="logo-light">Studio</span></a>
+                <address class="address">
+                    <p class="map-address">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="list">
+                        <li class="map-address-list-item"><a class="address-contact link"
+                                href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="map-address-list-item"><a class="address-contact link" href="tel:+38099-111-11-11">+38 99
+                                111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-right">
+                <p class="footer-links">ПРИСОЕДИНЯЙТЕСЬ</p>
+                <ul class="list footer-social">
+                    <li class="social-item"> <a class="social-link-dark" href="" target="_blank">
+                            <svg class="social-icon-dark" width="20px" height="20px">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="social-item"> <a class="social-link-dark social-link-dark" href="" target="_blank">
+                            <svg class="social-icon-dark" width="20px" height="20px">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="social-item"> <a class="social-link-dark" href="" target="_blank">
+                            <svg class="social-icon-dark" width="20px" height="20px">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="social-item"> <a class="social-link-dark" href="" target="_blank">
+                            <svg class="social-icon-dark" width="20px" height="20px">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+    
+            </div>
+            <form class="subscribe-form">
+                <p class="subscribe">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                <div class="footer-right-submit">
+    
+    
+                    <label class="form-field-subscribe">
+                        <input type="email" class="subscribe-form-input" name="user-mail" placeholder="E-mail" required />
+                    </label><button class="btn-subscribe" type="submit">Подписаться<svg class="subcsribe-send" width="24px"
+                            height="24px">
+                            <use href="./images/sprite.svg#icon-icon-send"></use>
+                        </svg></button>
+                </div>
+            </form>
+    
+    
+        </div>
+    </footer>
+</body>
+
+</html>
