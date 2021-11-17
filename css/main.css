@@ -120,6 +120,18 @@ ul {
   margin-right: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 section {
   padding-top: 94px;
   padding-bottom: 94px;
