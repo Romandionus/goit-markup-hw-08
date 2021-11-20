@@ -16,20 +16,35 @@
 </head>
 
 <body>
+    <div class="container"></div>
     <!--header-->
     <header class="header">
             <div class="container header-container">
             <a class="logo link" href="./index.html">Web<span class="logo-dark">Studio</span></a>
             <nav class="header-nav">
-                <!--кнопки навигации-->
+                <!--nav buttons-->
                 <ul class="list header-nav__list">
                     <li class="header-nav__item"><a class="header-nav__link link current" href="./index.html">Студия</a></li>
                     <li class="header-nav__item"><a class="header-nav__link link" href="./portfolio.html">Портфолио</a></li>
                     <li class="header-nav__item"><a class="header-nav__link link" href="/контакты">Контакты</a></li>
                 </ul>
             </nav>
+            <!-- START mobile menu -->
+            <button class="burger-btn">
+                <svg class="burger-btn__icon--menu">
+<use href="./images/sprite.svg#icon-menu-burger"></use></svg>
+            </button>
+            <div class="mobile-menu">
+                <button class="burger-btn--close">
+                <svg class="burger-btn__icon--close">
+                    <use href="./images/sprite.svg#icon-close-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+            <!-- END mobile button -->
             <!--почта и телефон-->
-            <ul class="list header-nav__list header-nav__contacts">
+            <!-- <ul class="list header-nav__list header-nav__contacts">
                 <li class="header--contacts">
                     <div class="header__contacts-container"><a class="header--contact-link link" href="mailto:info@devstudio.com"><svg
                                 class="mail-icon" width="16px" height="12px">
@@ -46,8 +61,8 @@
                     </div>
                 </li>
 
-            </ul>
-        </div>
+            </ul> -->
+        </div> 
     </header>
     <!-- основной контент-->
     <main>

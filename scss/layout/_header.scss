@@ -1,14 +1,59 @@
 .header {
   background-color: var(--header-color);
   border-bottom: 1px solid var(--background-border-color-two);
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
+  justify-content: space-between;
+}
+
+.burger-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.burger-btn__icon--menu {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: wheat;
+}
+.burger-btn--close {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+.burger-btn__icon--close {
+  width: 40px;
+  height: 40px;
 }
 
 .logo {
@@ -18,14 +63,7 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--background-text-color);
-  padding-top: 25px;
-  padding-bottom: 25px;
   margin-right: 93px;
-
-  @media screen and (max-width: 768px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }
 
 .logo-footer {
@@ -47,9 +85,7 @@
 .header-nav {
   margin-right: auto;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  display: none;
 }
 
 .header-nav__link {
@@ -65,22 +101,10 @@
 
 .header-nav__list {
   display: flex;
-  // mobile version header
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 }
 
 .header-nav__contacts {
-  // tablet version
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-
-  // desktop version
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
+  display: none;
 }
 
 .header-nav__item {
@@ -103,10 +127,6 @@
 
 .header__contacts-container {
   display: flex;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
 }
 
 .header--contact-link {
