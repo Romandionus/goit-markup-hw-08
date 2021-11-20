@@ -30,12 +30,12 @@
                 </ul>
             </nav>
             <!-- START mobile menu -->
-            <button class="burger-btn">
+            <button class="burger-btn" data-menu-open>
                 <svg class="burger-btn__icon--menu">
 <use href="./images/sprite.svg#icon-menu-burger"></use></svg>
             </button>
-            <div class="mobile-menu">
-                <button class="burger-btn--close">
+            <div class="mobile-menu" data-menu>
+                <button class="burger-btn--close" data-menu-close>
                 <svg class="burger-btn__icon--close">
                     <use href="./images/sprite.svg#icon-close-burger"></use>
                 </svg>
@@ -43,6 +43,7 @@
         </div>
 
             <!-- END mobile button -->
+
             <!--почта и телефон-->
             <!-- <ul class="list header-nav__list header-nav__contacts">
                 <li class="header--contacts">
@@ -371,7 +372,7 @@
         </div>
     </footer> -->
     <!-- Модальное окно заказа -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>
                 <svg class="modal-close-icon" width="18px" height="18px">
@@ -421,7 +422,7 @@
 
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="./js/model.js"></script>
 </body>
 </html>
