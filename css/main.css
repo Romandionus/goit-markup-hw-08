@@ -571,9 +571,9 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 93px;
   }
 }
 
@@ -662,6 +662,10 @@ ul {
 @media screen and (max-width: 1199px) {
   .header--contacts {
     margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .header--contacts:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -669,17 +673,11 @@ ul {
   position: relative;
 }
 
-@media screen and (max-width: 1199px) {
-  .header__contacts-container:first-child {
-    margin-bottom: 10px;
-  }
-}
-
 .header--contact-link {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--second-text-color);
   letter-spacing: 0.02em;
   align-items: center;
@@ -689,6 +687,8 @@ ul {
   .header--contact-link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
