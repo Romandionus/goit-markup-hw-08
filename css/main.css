@@ -259,6 +259,14 @@ section {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .btn-container-list {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+}
+
 .active-btn {
   color: var(--header-color);
   background-color: var(--background-text-color);
@@ -266,6 +274,12 @@ section {
 
 .btn-container-item {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-container-item {
+    margin-bottom: 15px;
+  }
 }
 
 .btn-container-item:last-child {
