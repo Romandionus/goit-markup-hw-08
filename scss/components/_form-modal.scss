@@ -21,16 +21,24 @@
 
 .modal-form-field {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 10px;
   color: var(--second-text-color);
+
+  // &:last-child {
+  //   margin-bottom: 30px;
+  // }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.14;
+    font-size: 14px;
+  }
 }
 
-.modal-form-field:nth-child(6) {
-  margin-bottom: 30px;
-}
+// .modal-form-field:nth-child(6) {
+//   margin-bottom: 30px;
+// }
 
 .form-field-comment {
   font-weight: 400;
@@ -123,9 +131,14 @@
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &::before {
     display: block;
@@ -148,7 +161,7 @@
 
   &:checked + .modal-form-checkbox-label::before {
     background-color: var(--background-text-color);
-    background-image: url(../images/Vector.svg);
+    background-image: url(../../images/Vector.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
@@ -170,11 +183,15 @@
   &::after {
     display: block;
     content: "";
-    width: 127px;
+    width: 110px;
     height: 1px;
     position: absolute;
-    bottom: 104px;
+    bottom: 120px;
     color: var(--background-text-color);
     background-color: var(--background-text-color);
+    @media screen and (min-width: 1200px) {
+      width: 127px;
+      bottom: 125px;
+    }
   }
 }

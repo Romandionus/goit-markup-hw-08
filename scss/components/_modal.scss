@@ -9,6 +9,9 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 .modal-btn {
