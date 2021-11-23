@@ -54,7 +54,10 @@
   visibility: hidden;
   pointer-events: none;
   display: flex;
+  // overflow-x: scroll;
+  // overflow: hidden;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,6 +105,8 @@
 .mobile-nav__social {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
+  //подумать о переносе ссылок flex-wrap: wrap;
 }
 .mobile-nav__social--item {
   margin-right: 20px;
@@ -116,7 +121,11 @@
     margin-right: 0px;
     border-right: none;
   }
+  //как вариант менять шрифты динамически от разрешения @media screen and (max-width: 479px) {
+  //   font-size: 4vw;
+  // }
 }
+
 .mobile-nav__social--link {
   color: var(--background-text-color);
 }
