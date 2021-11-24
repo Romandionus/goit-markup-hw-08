@@ -8,6 +8,11 @@
 }
 
 .container-list-filter {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +22,21 @@
 }
 
 .container-list-filter-item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+    &:nth-child(3) {
+      margin-right: 30px;
+    }
+    &:nth-child(5) {
+      margin-right: 30px;
+    }
+    &:nth-child(7) {
+      margin-right: 30px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin-right: 30px;
