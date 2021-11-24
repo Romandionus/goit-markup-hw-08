@@ -1145,12 +1145,22 @@ section {
   }
 }
 
+.tehno {
+  width: 470px;
+}
+
 .container-list-filter-item {
   margin-bottom: 30px;
 }
 
 .container-list-filter-item:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .container-list-filter-item {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
