@@ -106,9 +106,16 @@
 
 .mobile-nav__contact--tel {
   color: var(--background-text-color);
+  &:focus {
+    color: var(--second-text-color);
+  }
 }
+
 .mobile-nav__contact--mail {
   color: var(--second-text-color);
+  &:focus {
+    color: var(--background-text-color);
+  }
 }
 
 .mobile-nav__social {
@@ -140,6 +147,9 @@
 
 .mobile-nav__social--link {
   color: var(--background-text-color);
+  &:focus {
+    color: var(--second-text-color);
+  }
 }
 
 .mobile-menu.is-open {

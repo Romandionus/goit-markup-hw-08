@@ -699,8 +699,16 @@ section {
   color: var(--background-text-color);
 }
 
+.mobile-nav__contact--tel:focus {
+  color: var(--second-text-color);
+}
+
 .mobile-nav__contact--mail {
   color: var(--second-text-color);
+}
+
+.mobile-nav__contact--mail:focus {
+  color: var(--background-text-color);
 }
 
 .mobile-nav__social {
@@ -732,6 +740,10 @@ section {
 
 .mobile-nav__social--link {
   color: var(--background-text-color);
+}
+
+.mobile-nav__social--link:focus {
+  color: var(--second-text-color);
 }
 
 @media screen and (max-width: 767px) and (max-height: 795px) {
