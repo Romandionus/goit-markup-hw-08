@@ -106,7 +106,7 @@
 .btn-modal-submit {
   align-self: center;
   cursor: pointer;
-  width: 200px;
+  width: 150px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -124,6 +124,9 @@
   &:hover {
     box-shadow: var(--shadow-all--);
   }
+  @media screen and (min-width: 480px) {
+    width: 200px;
+  }
 }
 
 .modal-form-checkbox-label {
@@ -135,6 +138,7 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -143,7 +147,7 @@
   &::before {
     display: block;
     content: "";
-    width: 16px;
+    min-width: 16px;
     height: 15px;
     cursor: pointer;
     margin-right: 7px;
@@ -179,19 +183,20 @@
   &:visited {
     color: var(--background-text-color);
   }
-
-  &::after {
-    display: block;
-    content: "";
-    width: 110px;
-    height: 1px;
-    position: absolute;
-    bottom: 120px;
-    color: var(--background-text-color);
-    background-color: var(--background-text-color);
-    @media screen and (min-width: 1200px) {
-      width: 127px;
-      bottom: 125px;
+  @media screen and (min-width: 480px) {
+    &::after {
+      display: block;
+      content: "";
+      width: 110px;
+      height: 1px;
+      position: absolute;
+      bottom: 120px;
+      color: var(--background-text-color);
+      background-color: var(--background-text-color);
+      @media screen and (min-width: 1200px) {
+        width: 127px;
+        bottom: 125px;
+      }
     }
   }
 }
