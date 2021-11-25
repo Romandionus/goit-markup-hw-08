@@ -1214,7 +1214,6 @@ section {
   .container-list-filter {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
   }
 }
 
@@ -1243,7 +1242,7 @@ section {
 
 @media screen and (min-width: 768px) {
   .container-list-filter-item {
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    flex-basis: calc((100% - 1 * 30px) / 2);
   }
   .container-list-filter-item:nth-child(1) {
     margin-right: 30px;
