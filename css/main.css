@@ -1215,7 +1215,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -1281,7 +1280,9 @@ section {
 }
 
 .container-list-filter-link {
-  display: block;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
   text-decoration: none;
 }
 
@@ -1320,6 +1321,13 @@ section {
   padding-right: 24px;
   border: 1px solid var(--border-portfolio);
   border-top: none;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .container-list-filter-item-description {
+    flex-grow: 0;
+  }
 }
 
 .portfolio-content-description {
