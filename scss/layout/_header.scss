@@ -106,14 +106,16 @@
 
 .mobile-nav__contact--tel {
   color: var(--background-text-color);
-  &:focus {
+  &:focus,
+  &:hover {
     color: var(--second-text-color);
   }
 }
 
 .mobile-nav__contact--mail {
   color: var(--second-text-color);
-  &:focus {
+  &:focus,
+  &:hover {
     color: var(--background-text-color);
   }
 }
@@ -147,13 +149,14 @@
 
 .mobile-nav__social--link {
   color: var(--background-text-color);
-  &:focus {
+  &:focus,
+  &:hover {
     color: var(--second-text-color);
   }
 }
 
 .mobile-menu.is-open {
-  @media screen and (max-width: 767px) and (max-height: 795px) {
+  @media screen and (max-width: 767px) {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
@@ -291,11 +294,22 @@
   color: var(--second-text-color);
   letter-spacing: 0.02em;
   align-items: center;
+
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
+  }
+}
+.link__tablet--mail {
+  @media screen and (max-width: 1199px) {
+    padding-top: 20px;
+  }
+}
+.link__tablet--tel {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 20px;
   }
 }
 

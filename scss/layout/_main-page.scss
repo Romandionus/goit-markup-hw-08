@@ -1,4 +1,5 @@
 .main-page {
+  // width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--background-color-one);
@@ -11,10 +12,14 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  max-width: 480px;
+
   height: 400px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 480px) {
+    // max-width: 480px;
+    width: 100%;
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,9 +31,9 @@
       url(../images/hero2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-
+  @media screen and (min-width: 479px) {
+    // max-width: 768px;
+    width: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -45,8 +50,9 @@
         url(../images/hero-tablet2x.jpg);
     }
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 769px) {
+    // width: 1200px;
+    width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
