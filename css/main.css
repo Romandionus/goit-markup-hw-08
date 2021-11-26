@@ -152,13 +152,13 @@ section {
   padding: 40px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 500px) and (max-width: 1199px) {
   .modal {
     width: 450px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 499px) {
   .modal {
     width: 80%;
   }
@@ -434,6 +434,15 @@ section {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 499px) {
+  .modal-form-checkbox-label {
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-form-checkbox-label {
     font-size: 14px;
@@ -445,12 +454,19 @@ section {
   display: block;
   content: "";
   min-width: 16px;
+  width: 16px;
   height: 15px;
   cursor: pointer;
   margin-right: 7px;
   border: 1px solid #303030;
   border-radius: 3px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 421px) {
+  .modal-form-checkbox-label::before {
+    margin-top: 7px;
+  }
 }
 
 .modal-form-checkbox {
@@ -475,11 +491,18 @@ section {
   color: var(--background-text-color);
 }
 
+@media screen and (max-width: 500px) {
+  .link-modal {
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+}
+
 .link-modal:visited {
   color: var(--background-text-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 500px) {
   .link-modal::after {
     display: block;
     content: "";
@@ -492,7 +515,7 @@ section {
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 1200px) {
+@media screen and (min-width: 500px) and (min-width: 1200px) {
   .link-modal::after {
     width: 127px;
     bottom: 125px;
@@ -722,7 +745,7 @@ section {
 .mobile-nav__social--item {
   margin-right: 20px;
   font-weight: 500;
-  font-size: 3vh;
+  font-size: 6vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   border-right: 1px solid var(--border-mobile-color);
@@ -1150,7 +1173,7 @@ section {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .main-page {
     width: 100%;
     padding-top: 200px;
@@ -1161,7 +1184,7 @@ section {
   }
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-page {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop2x.jpg);
   }
