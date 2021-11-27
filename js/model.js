@@ -12,7 +12,6 @@
     refs.menu.classList.toggle('is-open');
   }
 })();
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
