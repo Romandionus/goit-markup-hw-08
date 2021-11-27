@@ -475,7 +475,7 @@ section {
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   background-color: var(--background-text-color);
-  background-image: url(../../images/Vector.svg);
+  background-image: url(../images/vector.svg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;
@@ -1173,9 +1173,16 @@ section {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .main-page {
+    background-position: top;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main-page {
     width: 100%;
+    background-position: 50%;
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
